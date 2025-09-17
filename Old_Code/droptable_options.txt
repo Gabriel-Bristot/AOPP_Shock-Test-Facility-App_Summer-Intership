@@ -1,0 +1,44 @@
+%%%These are the options for the Oxford Test Rig. In general this is assuming 2 NI DAQ boxes are attached to the PC with
+%%% 3 sensors attached to each box on ch0-ch2.
+
+NI_DAQ1name = "Dev1"
+	DEV1_sensor_CH0 = "12847X"
+	DEV1_sensor_CH0_gain = "942"
+	DEV1_sensor_CH1 = "16135Y"
+	DEV1_sensor_CH1_gain = "1059"
+	DEV1_sensor_CH2 = "16132Z"
+	DEV1_sensor_CH2_gain = "981"
+
+NI_DAQ2name = "Dev2"
+	DEV2_sensor_CH0 = "16131X" ""
+	DEV2_sensor_CH0_gain = "982" 
+	DEV2_sensor_CH1 = "11057Y"
+	DEV2_sensor_CH1_gain = "998"
+	DEV2_sensor_CH2 = "16133Z"
+	DEV2_sensor_CH2_gain = "971"
+
+
+sample_rate = "80" (KHz)
+sample_duration = "5" (sec)
+plot_data = "true"
+
+spec_freq = "100,1000,10000"
+spec_SRS = "10,350,350"
+
+%need diferent shock levels for the 3 axis
+spec_freq_x = "100,1000,10000"
+spec_SRS_x = "10,350,350"
+
+spec_freq_y = "100,1000,10000"
+spec_SRS_y = "10,350,350"
+
+spec_freq_z = "100,1000,10000"
+spec_SRS_z = "10,350,350"
+
+description_for_log_file = "true"
+
+*Hardware_mounted* = "test_jig"
+*Anvil_type* = "leather,_wood_and_urathan"
+*Extra* = "bare_table_run_for_LSTM"
+*project* = "Drayco_breadboard"
+*somehtingelse* = "something"
